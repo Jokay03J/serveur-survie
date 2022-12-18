@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Setup environment variable
-        run: echo VITE_API_KEY=${{ secrets.VITE_API_KEY }} > .env
+        run: echo VITE_SERVER_IP=${{ secrets.VITE_SERVER_IP }} VITE_SERVER_PORT=${{ secrets.VITE_SERVER_PORT }} > .env
 
       - name: Build project
         run: npm run build
