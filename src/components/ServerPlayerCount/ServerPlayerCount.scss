@@ -1,0 +1,64 @@
+.serverplayercount__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  height: 37%;
+  background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.92) 44.27%,
+      rgba(129, 129, 129, 0.455701) 72.4%,
+      rgba(129, 129, 129, 0.455701) 72.41%,
+      rgba(129, 129, 129, 0.455701) 99.99%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("../../assets/body.png");
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 10px;
+  color: white;
+  font-family: "minecraft", Arial, Helvetica, sans-serif;
+
+  .serverplayercount__title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  .serverplayercount__number {
+    color: red;
+  }
+
+  .serverplayercount__description {
+    margin-top: 15px;
+    text-align: right;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+    width: 177px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  .serverplayercount__button {
+    font-family: "minecraft";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    border: none;
+    background: #f35454;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 179px;
+    height: 45px;
+    margin-top: 95px;
+    color: white;
+  }
+}
